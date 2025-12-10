@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Title Light";
+  src: url("./fonts/Title_Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Title Light", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
   overflow-x: hidden;
 }
 
