@@ -1,6 +1,7 @@
 import React from "react";
 import herbtimeImage from "../assets/images/herbtime.png";
 import dogtimeImage from "../assets/images/dogtime.png";
+import naverstore from "../assets/images/naverstore.png";
 
 const ReservationPage = React.forwardRef((props, ref) => {
   const bookingCards = [
@@ -10,6 +11,7 @@ const ReservationPage = React.forwardRef((props, ref) => {
       price: "2시간 50000₩",
       image: herbtimeImage,
       buttonText: "예약하기",
+      url: "https://booking.naver.com/booking/10/bizes/1261837", //링크 추가
       description: [
         "허브타임 대관 전용 공간에서",
         "반려견과 함께 시간을",
@@ -22,6 +24,7 @@ const ReservationPage = React.forwardRef((props, ref) => {
       price: "2시간 100000₩",
       image: dogtimeImage,
       buttonText: "예약하기",
+      url: "https://example.com/dogtime-booking", //링크 추가
       description: [
         "독타임 대관 전용 공간에서",
         "반려견과 함께 시간을",
@@ -32,14 +35,21 @@ const ReservationPage = React.forwardRef((props, ref) => {
       id: 3,
       title: "네이버 스토어",
       price: "허브 티백 구매",
-      image: dogtimeImage, // 나중에 이미지 추가
+      image: naverstore, // 나중에 이미지 추가
       buttonText: "스토어 이동",
+      url: "https://smartstore.naver.com/your-store", //링크 추가
       description: [
         "허브타임 독타임 네이버 스토어에서",
         "허브 티백을 구매할 수 있습니다.",
       ],
     },
   ];
+
+  const handleButtonClick = (card) => {
+    if (card.url) {
+      window.location.href = card.url;
+    }
+  };
 
   return (
     <section id="reservation" ref={ref} className="page reservation-page">
@@ -76,6 +86,7 @@ const ReservationPage = React.forwardRef((props, ref) => {
                     className={`card-button ${
                       card.id === 1 ? "herbtime-button" : ""
                     }`}
+                    onClick={() => handleButtonClick(card)}
                   >
                     {card.buttonText}
                   </button>

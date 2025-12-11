@@ -1,5 +1,6 @@
 import React from "react";
-import backgroundImage from "../assets/images/dogtime.png";
+// import backgroundImage from "../assets/images/dogtime.png";
+import backgroundImage from "../assets/images/htdt_f.jpeg";
 
 const NoticePage = React.forwardRef((props, ref) => {
   return (

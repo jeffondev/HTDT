@@ -18,15 +18,15 @@ const PricingPage = React.forwardRef((props, ref) => {
             <div className="pricing-list">
               <div className="pricing-item">
                 <span className="pricing-label">보호자</span>
-                <span className="pricing-value">8000W</span>
+                <span className="pricing-value">8000원</span>
               </div>
               <div className="pricing-item">
                 <span className="pricing-label">반려견 첫째</span>
-                <span className="pricing-value">6000W</span>
+                <span className="pricing-value">6000원</span>
               </div>
               <div className="pricing-item">
                 <span className="pricing-label">반려견 둘째부터</span>
-                <span className="pricing-value">5000W</span>
+                <span className="pricing-value">5000원</span>
               </div>
             </div>
             <div className="pricing-notes">
@@ -44,11 +44,11 @@ const PricingPage = React.forwardRef((props, ref) => {
             <div className="pricing-list">
               <div className="pricing-item">
                 <span className="pricing-label">허브타임 대관</span>
-                <span className="pricing-value">50000W/2시간</span>
+                <span className="pricing-value">50000원/2시간</span>
               </div>
               <div className="pricing-item">
                 <span className="pricing-label">독타임 대관</span>
-                <span className="pricing-value">100000W/2시간</span>
+                <span className="pricing-value">100000원/2시간</span>
               </div>
             </div>
             <div className="pricing-notes">
