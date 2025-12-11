@@ -34,15 +34,18 @@ const Navbar = ({ currentPage, onNavClick }) => {
             </a>
           ))}
         </div>
-        <div className="nav-auth">
-          <a href="#login" className="nav-link">
-            로그인
-          </a>
-          <span className="divider">|</span>
-          <a href="#signup" className="nav-link">
-            회원가입
-          </a>
-        </div>
+        {/* 로그인 회원가입 버튼 */}
+        <span style={{ visibility: "hidden" }}>
+          <div className="nav-auth">
+            <a href="#login" className="nav-link">
+              로그인
+            </a>
+            <span className="divider">|</span>
+            <a href="#signup" className="nav-link">
+              회원가입
+            </a>
+          </div>
+        </span>
       </div>
     </nav>
   );
